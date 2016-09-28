@@ -20,6 +20,15 @@ describe('password-js', function () {
   });
 
   it('should generate a password that does NOT include symbols that are not allowed', function() {
-    assert(passwordGenerator.generate().indexOf("'") === -1, true)
+    passwordGenerator = new Password({
+      randomGenerator: function() {
+        return 1;
+      },
+      passwordLength: 1
+    })
+
+    for (var i = 250 - 1; i >= 0; i--) {
+      assert(passwordGenerator.generate().indexOf("'") === -1, true)
+    }
   });
 });
