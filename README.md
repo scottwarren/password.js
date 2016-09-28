@@ -27,3 +27,7 @@ MIT © [Scott Warren](s.cott.pw)
 [daviddm-url]: https://david-dm.org/scottwarren/password-js
 [coveralls-image]: https://coveralls.io/repos/scottwarren/password-js/badge.svg
 [coveralls-url]: https://coveralls.io/r/scottwarren/password-js
+
+
+
+Using Git Flow within this project (make branches from develop, and merge back to develop)
