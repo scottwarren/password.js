@@ -10,10 +10,21 @@ $ npm install --save password-js
 ## Usage
 
 ```js
-var passwordJs = require('password-js');
+var Password = require('password-js');
 
-passwordJs('Rainbow');
+var options = {
+  passwordLength: 20, // optional, defaults to 8
+  // randomGenerator // Optional random number generator, defaults to use Math.random()
+}
+
+var passwordGenerator = Password(options);
+
+var generatedPassword = passwordGenerator.generate();
 ```
+
+
+
+
 ## License
 
 MIT © [Scott Warren](s.cott.pw)
@@ -28,6 +39,6 @@ MIT © [Scott Warren](s.cott.pw)
 [coveralls-image]: https://coveralls.io/repos/scottwarren/password-js/badge.svg
 [coveralls-url]: https://coveralls.io/r/scottwarren/password-js
 
-
+## Contributing
 
 Using Git Flow within this project (make branches from develop, and merge back to develop)
